@@ -163,9 +163,9 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
-  padding-top:10px;
-  padding-left:10px;
-  border-left:solid 1px;
+  padding-top:50px;
+  padding-left:50px;
+  border-left:solid 1px #e5e5e5;
 }
 
 small {
