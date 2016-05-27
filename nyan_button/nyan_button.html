@@ -8,7 +8,7 @@ function button_pressed(){
 	var button_link = document.getElementById("nyan_link");
 	var share_flag = document.getElementById("share_check");
 	if(share_flag.checked){
-		button_link.href = "http://twitter.com/share?url=URL&text=にゃーん http://betaencoder.github.io/nyan_button/nyan_button.html #にゃーんぼたん";
+		button_link.href = "http://twitter.com/share?url=URL&text=にゃーん http://betaencoder.github.io/nyan_button/nyan_button.html ＃にゃーんぼたん";
 	}else{
 		button_link.href = "http://twitter.com/share?url=URL&text=にゃーん";
 	}
@@ -27,3 +27,6 @@ function button_released(){
 <input type="checkbox" id="share_check">このページをシェアする
 </center>
 </body>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-hashtags="にゃーん">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
