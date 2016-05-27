@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<head>
+<title>にゃーんボタン</title>
+<script>
+function button_pressed(){
+	var button_img = document.getElementById("nyan_button");
+	button_img.src = "img/button_pressed.png";
+	var button_link = document.getElementById("nyan_link");
+	var share_flag = document.getElementById("share_check");
+	if(share_flag.checked){
+		button_link.href = "http://twitter.com/share?url=URL&text=にゃーん http://betaencoder.github.io/nyan_button/nyan_button.html #にゃーんぼたん";
+	}else{
+		button_link.href = "http://twitter.com/share?url=URL&text=にゃーん";
+	}
+}
+function button_released(){
+	document.getElementById("nyan_button").src = "img/button.png";
+}
+</script>
+</head>
+<body style="background-image:url(img/background.jpg); background-repeat:repeat;margin:0px">
+<div style="background-image:url(img/gizagiza.png); background-repeat:repeat-x;margin:0px;width:100%;height:220px">
+<center><img src="img/title.png"><br>
+にゃーんと鳴くよ</center>
+</div>
+<center><a href="http://twitter.com/share?url=URL&text=にゃーん" id="nyan_link"><img src="img/button.png" onmousedown="button_pressed()" onmouseup="button_released()" id="nyan_button"><br></a>
+<input type="checkbox" id="share_check">このページをシェアする
+</center>
+</body>
